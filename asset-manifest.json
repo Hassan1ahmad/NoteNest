@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Hassan1ahmad/NoteNest/static/css/main.6a1d5f22.css",
+    "main.js": "/Hassan1ahmad/NoteNest/static/js/main.c3c02199.js",
+    "static/js/787.b90aa847.chunk.js": "/Hassan1ahmad/NoteNest/static/js/787.b90aa847.chunk.js",
+    "static/media/update.gif": "/Hassan1ahmad/NoteNest/static/media/update.1430908b04d522334658.gif",
+    "static/media/delete.gif": "/Hassan1ahmad/NoteNest/static/media/delete.1ff205e2f842142b4cad.gif",
+    "static/media/section1imglaptop.jpg": "/Hassan1ahmad/NoteNest/static/media/section1imglaptop.c3c633e4cb3a0112ec85.jpg",
+    "static/media/section2img.jpg": "/Hassan1ahmad/NoteNest/static/media/section2img.b9d175442518c900b6a9.jpg",
+    "static/media/section5img.jpg": "/Hassan1ahmad/NoteNest/static/media/section5img.9ca43eea01df68bdd7c8.jpg",
+    "index.html": "/Hassan1ahmad/NoteNest/index.html",
+    "main.6a1d5f22.css.map": "/Hassan1ahmad/NoteNest/static/css/main.6a1d5f22.css.map",
+    "main.c3c02199.js.map": "/Hassan1ahmad/NoteNest/static/js/main.c3c02199.js.map",
+    "787.b90aa847.chunk.js.map": "/Hassan1ahmad/NoteNest/static/js/787.b90aa847.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a1d5f22.css",
+    "static/js/main.c3c02199.js"
+  ]
+}
