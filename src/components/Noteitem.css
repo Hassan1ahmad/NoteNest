@@ -2,71 +2,131 @@
 
 /* General Styles */
 .container-noteitem {
-    max-width: 800px; /* Set a max-width to prevent stretching on wide screens */
-    margin: 0 auto; /* Center the container */
-    
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .card {
-    background-color: #676a7d; /* Slightly transparent white so a hint of gradient shows through */
+    background-color: #2c2f3b;
     border-radius: 25px;
-    padding: 20px; 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-
-    /* Optional: Move card slightly up when hovered and intensify shadow */
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    }
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
 
 .card-body {
-    position: relative; /* To position icons absolute to this */
-    padding: 20px; 
+    position: relative;
+    padding: 20px;
 }
 
 .card-title {
-    font-size: 1.25em; 
+    font-size: 1.25em;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .card-text {
-    color: white;
+    color: #d1d1d1;
     font-size: 1.1em;
-    font-family: 'Poppins', sans-serif;    
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Icon Styles */
 .fa-solid {
-    font-size: 1.2em; 
-    margin: 0 10px; /* Give icons some space */
-    cursor: pointer; /* Change cursor to hand pointer */
-    transition: color 0.3s ease; /* Smooth color transition for hover */
+    font-size: 1.2em;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #ffffff;
 }
 
 .fa-pen-to-square:hover {
-    color: #007bff; /* Blue color on hover for edit icon */
+    color: #007bff;
 }
 
 .fa-trash-can:hover {
-    color: #dc3545; /* Red color on hover for delete icon */
+    color: #dc3545;
+}
+
+.fa-copy:hover {
+    color: #28a745;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2c2f3b;
+    color: #ffffff;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.titles-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2c2f3b;
+    border: 1px solid #444;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* Custom Scrollbar Styles */
+.titles-dropdown::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.titles-dropdown::-webkit-scrollbar-track {
+  background: #2c2f3b; /* Dark background for the track */
+  border-radius: 5px; /* Rounded corners for the track */
+}
+
+.titles-dropdown::-webkit-scrollbar-thumb {
+  background: #555; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+.titles-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Color of the scrollbar thumb on hover */
+}
+.title-item {
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: left;
+}
+
+.title-item:hover {
+    background-color: #444;
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
     .card-title {
-        font-size: 1em; /* Reduce font size on smaller screens */
+        font-size: 1em;
     }
 
     .fa-solid {
-        font-size: 1em; 
+        font-size: 1em;
     }
-    .card-body{
+
+    .card-body {
         padding: 10px;
     }
-    
 }
